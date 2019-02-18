@@ -1,0 +1,115 @@
+[2019-02-16 16:35:01,548] {logging_mixin.py:95} INFO - Sending to executor.
+[2019-02-16 16:35:01,549] {logging_mixin.py:95} INFO - [2019-02-16 16:35:01,548] {base_executor.py:56} INFO - Adding to queue: airflow run clean clean_infomix 2019-02-16T00:00:00+00:00 --local -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 16:35:01,552] {logging_mixin.py:95} INFO - [2019-02-16 16:35:01,552] {sequential_executor.py:45} INFO - Executing command: airflow run clean clean_infomix 2019-02-16T00:00:00+00:00 --local -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 16:35:03,074] {models.py:1359} INFO - Dependencies all met for <TaskInstance: clean.clean_infomix 2019-02-16T00:00:00+00:00 [None]>
+[2019-02-16 16:35:03,078] {models.py:1359} INFO - Dependencies all met for <TaskInstance: clean.clean_infomix 2019-02-16T00:00:00+00:00 [None]>
+[2019-02-16 16:35:03,079] {models.py:1571} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2019-02-16 16:35:03,087] {models.py:1593} INFO - Executing <Task(PythonOperator): clean_infomix> on 2019-02-16T00:00:00+00:00
+[2019-02-16 16:35:03,087] {base_task_runner.py:118} INFO - Running: ['bash', '-c', 'airflow run clean clean_infomix 2019-02-16T00:00:00+00:00 --job_id 1 --raw -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py --cfg_path /var/folders/3v/wfr8518x3q9_5f53sf2d97y00000gn/T/tmp72o_u8a8']
+[2019-02-16 16:35:03,924] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix [2019-02-16 16:35:03,923] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-02-16 16:35:04,234] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix [2019-02-16 16:35:04,233] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 16:35:04,505] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix [2019-02-16 16:35:04,505] {cli.py:520} INFO - Running <TaskInstance: clean.clean_infomix 2019-02-16T00:00:00+00:00 [running]> on host bruno-macbook
+[2019-02-16 16:35:04,519] {python_operator.py:95} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=clean
+AIRFLOW_CTX_TASK_ID=clean_infomix
+AIRFLOW_CTX_EXECUTION_DATE=2019-02-16T00:00:00+00:00
+[2019-02-16 16:35:04,519] {models.py:1788} ERROR - clean_infomix_data() got an unexpected keyword argument 'dag'
+Traceback (most recent call last):
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/models.py", line 1657, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 103, in execute
+    return_value = self.execute_callable()
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 108, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: clean_infomix_data() got an unexpected keyword argument 'dag'
+[2019-02-16 16:35:04,526] {models.py:1811} INFO - Marking task as UP_FOR_RETRY
+[2019-02-16 16:35:04,550] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix Traceback (most recent call last):
+[2019-02-16 16:35:04,551] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/bin/airflow", line 32, in <module>
+[2019-02-16 16:35:04,551] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix     args.func(args)
+[2019-02-16 16:35:04,551] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2019-02-16 16:35:04,551] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix     return f(*args, **kwargs)
+[2019-02-16 16:35:04,551] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/bin/cli.py", line 526, in run
+[2019-02-16 16:35:04,551] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix     _run(args, dag, ti)
+[2019-02-16 16:35:04,551] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/bin/cli.py", line 445, in _run
+[2019-02-16 16:35:04,551] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix     pool=args.pool,
+[2019-02-16 16:35:04,552] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/utils/db.py", line 73, in wrapper
+[2019-02-16 16:35:04,552] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix     return func(*args, **kwargs)
+[2019-02-16 16:35:04,552] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/models.py", line 1657, in _run_raw_task
+[2019-02-16 16:35:04,552] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix     result = task_copy.execute(context=context)
+[2019-02-16 16:35:04,552] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 103, in execute
+[2019-02-16 16:35:04,552] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix     return_value = self.execute_callable()
+[2019-02-16 16:35:04,552] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 108, in execute_callable
+[2019-02-16 16:35:04,552] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix     return self.python_callable(*self.op_args, **self.op_kwargs)
+[2019-02-16 16:35:04,552] {base_task_runner.py:101} INFO - Job 1: Subtask clean_infomix TypeError: clean_infomix_data() got an unexpected keyword argument 'dag'
+[2019-02-16 16:35:08,072] {logging_mixin.py:95} INFO - [2019-02-16 16:35:08,071] {jobs.py:2527} INFO - Task exited with return code 1
+[2019-02-16 23:10:31,584] {logging_mixin.py:95} INFO - Sending to executor.
+[2019-02-16 23:10:31,586] {logging_mixin.py:95} INFO - [2019-02-16 23:10:31,585] {base_executor.py:56} INFO - Adding to queue: airflow run clean clean_infomix 2019-02-16T00:00:00+00:00 --local -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:10:31,590] {logging_mixin.py:95} INFO - [2019-02-16 23:10:31,590] {sequential_executor.py:45} INFO - Executing command: airflow run clean clean_infomix 2019-02-16T00:00:00+00:00 --local -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:10:33,084] {models.py:1353} INFO - Dependencies not met for <TaskInstance: clean.clean_infomix 2019-02-16T00:00:00+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'total': 1, 'successes': 0, 'skipped': 0, 'failed': 0, 'upstream_failed': 0, 'done': 0}, upstream_task_ids={'clean_cosmos'}
+[2019-02-16 23:10:33,085] {logging_mixin.py:95} INFO - [2019-02-16 23:10:33,085] {jobs.py:2514} INFO - Task is not able to be run
+[2019-02-16 23:10:48,690] {logging_mixin.py:95} INFO - Sending to executor.
+[2019-02-16 23:10:48,691] {logging_mixin.py:95} INFO - [2019-02-16 23:10:48,690] {base_executor.py:56} INFO - Adding to queue: airflow run clean clean_infomix 2019-02-16T00:00:00+00:00 --local -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:10:48,694] {logging_mixin.py:95} INFO - [2019-02-16 23:10:48,694] {sequential_executor.py:45} INFO - Executing command: airflow run clean clean_infomix 2019-02-16T00:00:00+00:00 --local -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:10:50,138] {models.py:1353} INFO - Dependencies not met for <TaskInstance: clean.clean_infomix 2019-02-16T00:00:00+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'total': 1, 'successes': 0, 'skipped': 0, 'failed': 0, 'upstream_failed': 0, 'done': 0}, upstream_task_ids={'clean_cosmos'}
+[2019-02-16 23:10:50,140] {logging_mixin.py:95} INFO - [2019-02-16 23:10:50,140] {jobs.py:2514} INFO - Task is not able to be run
+[2019-02-16 23:29:53,689] {logging_mixin.py:95} INFO - Sending to executor.
+[2019-02-16 23:29:53,691] {logging_mixin.py:95} INFO - [2019-02-16 23:29:53,691] {base_executor.py:56} INFO - Adding to queue: airflow run clean clean_infomix 2019-02-16T00:00:00+00:00 --local -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:29:53,694] {logging_mixin.py:95} INFO - [2019-02-16 23:29:53,694] {sequential_executor.py:45} INFO - Executing command: airflow run clean clean_infomix 2019-02-16T00:00:00+00:00 --local -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:29:55,254] {models.py:1353} INFO - Dependencies not met for <TaskInstance: clean.clean_infomix 2019-02-16T00:00:00+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'total': 1, 'successes': 0, 'skipped': 0, 'failed': 0, 'upstream_failed': 0, 'done': 0}, upstream_task_ids={'clean_cosmos'}
+[2019-02-16 23:29:55,255] {logging_mixin.py:95} INFO - [2019-02-16 23:29:55,255] {jobs.py:2514} INFO - Task is not able to be run
+[2019-02-16 23:41:53,077] {models.py:1359} INFO - Dependencies all met for <TaskInstance: clean.clean_infomix 2019-02-16T00:00:00+00:00 [queued]>
+[2019-02-16 23:41:53,083] {models.py:1359} INFO - Dependencies all met for <TaskInstance: clean.clean_infomix 2019-02-16T00:00:00+00:00 [queued]>
+[2019-02-16 23:41:53,084] {models.py:1571} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2019-02-16 23:41:53,092] {models.py:1593} INFO - Executing <Task(PythonOperator): clean_infomix> on 2019-02-16T00:00:00+00:00
+[2019-02-16 23:41:53,093] {base_task_runner.py:118} INFO - Running: ['bash', '-c', 'airflow run clean clean_infomix 2019-02-16T00:00:00+00:00 --job_id 8 --raw -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py --cfg_path /var/folders/3v/wfr8518x3q9_5f53sf2d97y00000gn/T/tmpbyt1sn5x']
+[2019-02-16 23:41:54,417] {base_task_runner.py:101} INFO - Job 8: Subtask clean_infomix [2019-02-16 23:41:54,416] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-02-16 23:41:55,074] {base_task_runner.py:101} INFO - Job 8: Subtask clean_infomix [2019-02-16 23:41:55,073] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:41:55,742] {base_task_runner.py:101} INFO - Job 8: Subtask clean_infomix [2019-02-16 23:41:55,741] {cli.py:520} INFO - Running <TaskInstance: clean.clean_infomix 2019-02-16T00:00:00+00:00 [running]> on host bruno-macbook
+[2019-02-16 23:41:55,771] {python_operator.py:95} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=clean
+AIRFLOW_CTX_TASK_ID=clean_infomix
+AIRFLOW_CTX_EXECUTION_DATE=2019-02-16T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-02-16T00:00:00+00:00
+[2019-02-16 23:41:57,408] {logging_mixin.py:103} INFO - ]0;IPython: Downloads/data_engineer_etl_test
+[2019-02-16 23:41:57,419] {logging_mixin.py:95} INFO - > [0;32m/Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py[0m(27)[0;36mclean_infomix_data[0;34m()[0m
+[0;32m     26 [0;31m    [0;32mimport[0m [0mipdb[0m[0;34m;[0m[0mipdb[0m[0;34m.[0m[0mset_trace[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m---> 27 [0;31m    [0minfomix[0m [0;34m=[0m [0mpd[0m[0;34m.[0m[0mread_csv[0m[0;34m([0m[0mraw_data[0m [0;34m/[0m [0;34m'infomix.tsv'[0m[0;34m,[0m [0msep[0m[0;34m=[0m[0;34m'\t'[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     28 [0;31m[0;34m[0m[0m
+[0m
+[2019-02-16 23:41:57,420] {logging_mixin.py:103} INFO - ipdb> 
+[2019-02-17 01:44:19,530] {logging_mixin.py:95} INFO - *** NameError: name 'eee' is not defined
+[2019-02-17 01:44:19,559] {logging_mixin.py:103} INFO - ipdb> 
+[2019-02-17 01:44:19,591] {models.py:1788} ERROR - [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/models.py", line 1657, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 103, in execute
+    return_value = self.execute_callable()
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 108, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py", line 27, in clean_infomix_data
+  File "/Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py", line 27, in clean_infomix_data
+  File "/anaconda3/lib/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/anaconda3/lib/python3.6/bdb.py", line 69, in dispatch_line
+    self.user_line(frame)
+  File "/anaconda3/lib/python3.6/pdb.py", line 261, in user_line
+    self.interaction(frame, None)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/IPython/core/debugger.py", line 297, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "/anaconda3/lib/python3.6/pdb.py", line 352, in interaction
+    self._cmdloop()
+  File "/anaconda3/lib/python3.6/pdb.py", line 321, in _cmdloop
+    self.cmdloop()
+  File "/anaconda3/lib/python3.6/cmd.py", line 126, in cmdloop
+    line = input(self.prompt)
+OSError: [Errno 5] Input/output error
+[2019-02-17 01:44:19,662] {models.py:1811} INFO - Marking task as UP_FOR_RETRY

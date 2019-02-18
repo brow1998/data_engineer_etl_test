@@ -1,0 +1,76 @@
+[2019-02-17 11:58:38,872] {logging_mixin.py:95} INFO - Sending to executor.
+[2019-02-17 11:58:38,872] {logging_mixin.py:95} INFO - [2019-02-17 11:58:38,872] {base_executor.py:56} INFO - Adding to queue: airflow run clean load_into_csv 2019-02-17T00:00:00+00:00 --local -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:58:38,876] {logging_mixin.py:95} INFO - [2019-02-17 11:58:38,876] {sequential_executor.py:45} INFO - Executing command: airflow run clean load_into_csv 2019-02-17T00:00:00+00:00 --local -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:58:40,505] {models.py:1359} INFO - Dependencies all met for <TaskInstance: clean.load_into_csv 2019-02-17T00:00:00+00:00 [None]>
+[2019-02-17 11:58:40,509] {models.py:1359} INFO - Dependencies all met for <TaskInstance: clean.load_into_csv 2019-02-17T00:00:00+00:00 [None]>
+[2019-02-17 11:58:40,509] {models.py:1571} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2019-02-17 11:58:40,519] {models.py:1593} INFO - Executing <Task(PythonOperator): load_into_csv> on 2019-02-17T00:00:00+00:00
+[2019-02-17 11:58:40,520] {base_task_runner.py:118} INFO - Running: ['bash', '-c', 'airflow run clean load_into_csv 2019-02-17T00:00:00+00:00 --job_id 7 --raw -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py --cfg_path /var/folders/3v/wfr8518x3q9_5f53sf2d97y00000gn/T/tmpwb7t0rhg']
+[2019-02-17 11:58:41,423] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv [2019-02-17 11:58:41,423] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-02-17 11:58:41,742] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv [2019-02-17 11:58:41,742] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:58:42,012] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv [2019-02-17 11:58:42,011] {cli.py:520} INFO - Running <TaskInstance: clean.load_into_csv 2019-02-17T00:00:00+00:00 [running]> on host bruno-macbook
+[2019-02-17 11:58:42,026] {python_operator.py:95} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=clean
+AIRFLOW_CTX_TASK_ID=load_into_csv
+AIRFLOW_CTX_EXECUTION_DATE=2019-02-17T00:00:00+00:00
+[2019-02-17 11:58:42,027] {models.py:1788} ERROR - [Errno 2] File b'/Users/brow1998/Downloads/data_engineer_etl_test/treated_data/infomix_treated.csv' does not exist: b'/Users/brow1998/Downloads/data_engineer_etl_test/treated_data/infomix_treated.csv'
+Traceback (most recent call last):
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/models.py", line 1657, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 103, in execute
+    return_value = self.execute_callable()
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 108, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py", line 81, in export_final_result
+    infomix = pd.read_csv(treated_data/'infomix_treated.csv')
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 702, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 429, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1122, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1853, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 387, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 705, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'/Users/brow1998/Downloads/data_engineer_etl_test/treated_data/infomix_treated.csv' does not exist: b'/Users/brow1998/Downloads/data_engineer_etl_test/treated_data/infomix_treated.csv'
+[2019-02-17 11:58:42,039] {models.py:1811} INFO - Marking task as UP_FOR_RETRY
+[2019-02-17 11:58:42,062] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv Traceback (most recent call last):
+[2019-02-17 11:58:42,063] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/bin/airflow", line 32, in <module>
+[2019-02-17 11:58:42,063] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     args.func(args)
+[2019-02-17 11:58:42,063] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2019-02-17 11:58:42,063] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     return f(*args, **kwargs)
+[2019-02-17 11:58:42,063] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/bin/cli.py", line 526, in run
+[2019-02-17 11:58:42,063] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     _run(args, dag, ti)
+[2019-02-17 11:58:42,063] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/bin/cli.py", line 445, in _run
+[2019-02-17 11:58:42,063] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     pool=args.pool,
+[2019-02-17 11:58:42,063] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/utils/db.py", line 73, in wrapper
+[2019-02-17 11:58:42,063] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     return func(*args, **kwargs)
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/models.py", line 1657, in _run_raw_task
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     result = task_copy.execute(context=context)
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 103, in execute
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     return_value = self.execute_callable()
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 108, in execute_callable
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     return self.python_callable(*self.op_args, **self.op_kwargs)
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py", line 81, in export_final_result
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     infomix = pd.read_csv(treated_data/'infomix_treated.csv')
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 702, in parser_f
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     return _read(filepath_or_buffer, kwds)
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 429, in _read
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     parser = TextFileReader(filepath_or_buffer, **kwds)
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 895, in __init__
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     self._make_engine(self.engine)
+[2019-02-17 11:58:42,064] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1122, in _make_engine
+[2019-02-17 11:58:42,065] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     self._engine = CParserWrapper(self.f, **self.options)
+[2019-02-17 11:58:42,065] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1853, in __init__
+[2019-02-17 11:58:42,065] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv     self._reader = parsers.TextReader(src, **kwds)
+[2019-02-17 11:58:42,065] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "pandas/_libs/parsers.pyx", line 387, in pandas._libs.parsers.TextReader.__cinit__
+[2019-02-17 11:58:42,065] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv   File "pandas/_libs/parsers.pyx", line 705, in pandas._libs.parsers.TextReader._setup_parser_source
+[2019-02-17 11:58:42,065] {base_task_runner.py:101} INFO - Job 7: Subtask load_into_csv FileNotFoundError: [Errno 2] File b'/Users/brow1998/Downloads/data_engineer_etl_test/treated_data/infomix_treated.csv' does not exist: b'/Users/brow1998/Downloads/data_engineer_etl_test/treated_data/infomix_treated.csv'
+[2019-02-17 11:58:45,508] {logging_mixin.py:95} INFO - [2019-02-17 11:58:45,507] {jobs.py:2527} INFO - Task exited with return code 1

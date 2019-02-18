@@ -1,0 +1,214 @@
+[2019-02-16 23:35:18,017] {jobs.py:391} INFO - Started process (PID=93691) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:35:18,023] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-16 23:35:18,024] {logging_mixin.py:95} INFO - [2019-02-16 23:35:18,023] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:35:18,639] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:35:18,666] {jobs.py:1422} INFO - Processing clean
+[2019-02-16 23:35:18,712] {jobs.py:1426} INFO - Created <DagRun clean @ 2019-02-16T00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-16 23:35:18,715] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-16 23:35:18,752] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-16 23:35:18,766] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.clean_gs1 2019-02-16 00:00:00+00:00 [scheduled]> in ORM
+[2019-02-16 23:35:18,775] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.758 seconds
+[2019-02-16 23:36:20,548] {jobs.py:391} INFO - Started process (PID=93754) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:36:20,555] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-16 23:36:20,556] {logging_mixin.py:95} INFO - [2019-02-16 23:36:20,556] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:36:21,138] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:36:21,173] {jobs.py:1422} INFO - Processing clean
+[2019-02-16 23:36:21,186] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-16 23:36:21,228] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-16 23:36:21,237] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.clean_cnpjs 2019-02-16 00:00:00+00:00 [scheduled]> in ORM
+[2019-02-16 23:36:21,249] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.701 seconds
+[2019-02-16 23:37:50,691] {jobs.py:391} INFO - Started process (PID=93790) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:37:50,696] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-16 23:37:50,697] {logging_mixin.py:95} INFO - [2019-02-16 23:37:50,697] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:37:50,981] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:37:51,017] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.326 seconds
+[2019-02-16 23:38:30,798] {jobs.py:391} INFO - Started process (PID=93886) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:38:30,804] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-16 23:38:30,806] {logging_mixin.py:95} INFO - [2019-02-16 23:38:30,805] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:38:31,444] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:38:31,469] {jobs.py:1422} INFO - Processing clean
+[2019-02-16 23:38:31,505] {jobs.py:1426} INFO - Created <DagRun clean @ 2019-02-16T00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-16 23:38:31,508] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-16 23:38:31,529] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-17 01:38:28.014401+00:00: manual__2019-02-17T01:38:28.014401+00:00, externally triggered: True>
+[2019-02-16 23:38:31,577] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-16 23:38:31,592] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.clean_gs1 2019-02-16 00:00:00+00:00 [scheduled]> in ORM
+[2019-02-16 23:38:31,596] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.clean_gs1 2019-02-17 01:38:28.014401+00:00 [scheduled]> in ORM
+[2019-02-16 23:38:31,604] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.806 seconds
+[2019-02-16 23:39:57,670] {jobs.py:391} INFO - Started process (PID=93918) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:39:57,679] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-16 23:39:57,680] {logging_mixin.py:95} INFO - [2019-02-16 23:39:57,679] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:39:58,379] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:39:58,408] {jobs.py:1422} INFO - Processing clean
+[2019-02-16 23:39:58,420] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-16 23:39:58,446] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-17 01:38:28.014401+00:00: manual__2019-02-17T01:38:28.014401+00:00, externally triggered: True>
+[2019-02-16 23:39:58,513] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-16 23:39:58,532] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.clean_cnpjs 2019-02-16 00:00:00+00:00 [scheduled]> in ORM
+[2019-02-16 23:39:58,542] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.clean_cnpjs 2019-02-17 01:38:28.014401+00:00 [scheduled]> in ORM
+[2019-02-16 23:39:58,555] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.886 seconds
+[2019-02-16 23:40:54,337] {jobs.py:391} INFO - Started process (PID=93985) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:40:54,343] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-16 23:40:54,344] {logging_mixin.py:95} INFO - [2019-02-16 23:40:54,344] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:40:54,709] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:40:54,737] {jobs.py:1422} INFO - Processing clean
+[2019-02-16 23:40:54,749] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-16 23:40:54,767] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-17 01:38:28.014401+00:00: manual__2019-02-17T01:38:28.014401+00:00, externally triggered: True>
+[2019-02-16 23:40:54,829] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-16 23:40:54,842] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.clean_cosmos 2019-02-16 00:00:00+00:00 [scheduled]> in ORM
+[2019-02-16 23:40:54,850] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.clean_cosmos 2019-02-17 01:38:28.014401+00:00 [scheduled]> in ORM
+[2019-02-16 23:40:54,862] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.525 seconds
+[2019-02-16 23:41:48,130] {jobs.py:391} INFO - Started process (PID=94178) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:41:48,146] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-16 23:41:48,149] {logging_mixin.py:95} INFO - [2019-02-16 23:41:48,148] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:41:49,189] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:41:49,248] {jobs.py:1422} INFO - Processing clean
+[2019-02-16 23:41:49,275] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-16 23:41:49,305] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-17 01:38:28.014401+00:00: manual__2019-02-17T01:38:28.014401+00:00, externally triggered: True>
+[2019-02-16 23:41:49,337] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-16 23:41:49,386] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.clean_infomix 2019-02-16 00:00:00+00:00 [scheduled]> in ORM
+[2019-02-16 23:41:49,404] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.clean_infomix 2019-02-17 01:38:28.014401+00:00 [scheduled]> in ORM
+[2019-02-16 23:41:49,417] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 1.287 seconds
+[2019-02-17 11:52:49,776] {jobs.py:391} INFO - Started process (PID=99113) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:52:49,786] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 11:52:49,789] {logging_mixin.py:95} INFO - [2019-02-17 11:52:49,788] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:52:50,473] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:52:50,505] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 11:52:50,552] {jobs.py:1426} INFO - Created <DagRun clean @ 2019-02-16T00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-17 11:52:50,555] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-17 11:52:50,591] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-17 14:51:50.284564+00:00: manual__2019-02-17T14:51:50.284564+00:00, externally triggered: True>
+[2019-02-17 11:52:50,693] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 11:52:50,716] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.load_into_csv 2019-02-16 00:00:00+00:00 [scheduled]> in ORM
+[2019-02-17 11:52:50,721] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.load_into_csv 2019-02-17 14:51:50.284564+00:00 [scheduled]> in ORM
+[2019-02-17 11:52:50,732] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.955 seconds
+[2019-02-17 11:53:45,915] {jobs.py:391} INFO - Started process (PID=99239) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:53:45,930] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 11:53:45,932] {logging_mixin.py:95} INFO - [2019-02-17 11:53:45,931] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:53:46,729] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:53:46,768] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 11:53:46,783] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-17 11:53:46,826] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-17 14:51:50.284564+00:00: manual__2019-02-17T14:51:50.284564+00:00, externally triggered: True>
+[2019-02-17 11:53:46,915] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 11:53:46,923] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.load_into_csv 2019-02-16 00:00:00+00:00 [scheduled]> in ORM
+[2019-02-17 11:53:46,928] {jobs.py:1752} INFO - Creating / updating <TaskInstance: clean.load_into_csv 2019-02-17 14:51:50.284564+00:00 [scheduled]> in ORM
+[2019-02-17 11:53:46,936] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 1.021 seconds
+[2019-02-17 11:56:34,667] {jobs.py:391} INFO - Started process (PID=99433) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:56:34,673] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 11:56:34,674] {logging_mixin.py:95} INFO - [2019-02-17 11:56:34,674] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:56:34,982] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:56:35,010] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 11:56:35,026] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-17 11:56:35,083] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-17 14:51:50.284564+00:00: manual__2019-02-17T14:51:50.284564+00:00, externally triggered: True>
+[2019-02-17 11:56:35,181] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 11:56:35,192] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.526 seconds
+[2019-02-17 11:57:14,782] {jobs.py:391} INFO - Started process (PID=99480) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:57:14,789] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 11:57:14,790] {logging_mixin.py:95} INFO - [2019-02-17 11:57:14,790] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:57:15,217] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:57:15,246] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 11:57:15,263] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-17 11:57:15,313] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-17 14:51:50.284564+00:00: manual__2019-02-17T14:51:50.284564+00:00, externally triggered: True>
+[2019-02-17 11:57:15,414] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 11:57:15,424] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.643 seconds
+[2019-02-17 11:57:54,904] {jobs.py:391} INFO - Started process (PID=99606) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:57:54,911] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 11:57:54,912] {logging_mixin.py:95} INFO - [2019-02-17 11:57:54,911] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:57:55,200] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:57:55,227] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 11:57:55,239] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-17 11:57:55,267] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-17 14:51:50.284564+00:00: manual__2019-02-17T14:51:50.284564+00:00, externally triggered: True>
+[2019-02-17 11:57:55,319] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 11:57:55,329] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.425 seconds
+[2019-02-17 11:58:35,029] {jobs.py:391} INFO - Started process (PID=99650) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:58:35,036] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 11:58:35,037] {logging_mixin.py:95} INFO - [2019-02-17 11:58:35,037] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:58:35,331] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:58:35,358] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 11:58:35,370] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False>
+[2019-02-17 11:58:35,382] {logging_mixin.py:95} INFO - [2019-02-17 11:58:35,381] {models.py:5258} INFO - Marking run <DagRun clean @ 2019-02-16 00:00:00+00:00: scheduled__2019-02-16T00:00:00+00:00, externally triggered: False> failed
+[2019-02-17 11:58:35,394] {jobs.py:917} INFO - Examining DAG run <DagRun clean @ 2019-02-17 14:51:50.284564+00:00: manual__2019-02-17T14:51:50.284564+00:00, externally triggered: True>
+[2019-02-17 11:58:35,404] {logging_mixin.py:95} INFO - [2019-02-17 11:58:35,404] {models.py:5258} INFO - Marking run <DagRun clean @ 2019-02-17 14:51:50.284564+00:00: manual__2019-02-17T14:51:50.284564+00:00, externally triggered: True> failed
+[2019-02-17 11:58:35,412] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 11:58:35,426] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.396 seconds
+[2019-02-17 11:59:15,136] {jobs.py:391} INFO - Started process (PID=99727) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:59:15,144] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 11:59:15,145] {logging_mixin.py:95} INFO - [2019-02-17 11:59:15,145] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:59:15,476] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:59:15,512] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 11:59:15,526] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 11:59:15,535] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.399 seconds
+[2019-02-17 11:59:55,263] {jobs.py:391} INFO - Started process (PID=99779) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:59:55,270] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 11:59:55,272] {logging_mixin.py:95} INFO - [2019-02-17 11:59:55,271] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:59:55,804] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 11:59:55,834] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 11:59:55,848] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 11:59:55,856] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.593 seconds
+[2019-02-17 12:00:35,357] {jobs.py:391} INFO - Started process (PID=99825) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:00:35,367] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 12:00:35,369] {logging_mixin.py:95} INFO - [2019-02-17 12:00:35,368] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:00:36,095] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:00:36,135] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 12:00:36,155] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 12:00:36,168] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.810 seconds
+[2019-02-17 12:01:15,454] {jobs.py:391} INFO - Started process (PID=99871) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:01:15,461] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 12:01:15,462] {logging_mixin.py:95} INFO - [2019-02-17 12:01:15,461] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:01:15,746] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:01:15,774] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 12:01:15,789] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 12:01:15,798] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.344 seconds
+[2019-02-17 12:01:55,585] {jobs.py:391} INFO - Started process (PID=99925) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:01:55,595] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 12:01:55,597] {logging_mixin.py:95} INFO - [2019-02-17 12:01:55,596] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:01:55,962] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:01:56,016] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 12:01:56,046] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 12:01:56,069] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.484 seconds
+[2019-02-17 12:02:35,693] {jobs.py:391} INFO - Started process (PID=99974) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:02:35,700] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 12:02:35,701] {logging_mixin.py:95} INFO - [2019-02-17 12:02:35,701] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:02:36,377] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:02:36,408] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 12:02:36,421] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 12:02:36,428] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.735 seconds
+[2019-02-17 12:03:15,796] {jobs.py:391} INFO - Started process (PID=129) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:03:15,803] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 12:03:15,804] {logging_mixin.py:95} INFO - [2019-02-17 12:03:15,804] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:03:16,084] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:03:16,110] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 12:03:16,121] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 12:03:16,131] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.335 seconds
+[2019-02-17 12:03:55,906] {jobs.py:391} INFO - Started process (PID=158) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:03:55,912] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 12:03:55,913] {logging_mixin.py:95} INFO - [2019-02-17 12:03:55,913] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:03:56,230] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:03:56,256] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 12:03:56,268] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 12:03:56,274] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.368 seconds
+[2019-02-17 12:04:36,024] {jobs.py:391} INFO - Started process (PID=185) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:04:36,030] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 12:04:36,031] {logging_mixin.py:95} INFO - [2019-02-17 12:04:36,031] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:04:36,380] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:04:36,406] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 12:04:36,418] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 12:04:36,424] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.401 seconds
+[2019-02-17 12:05:16,145] {jobs.py:391} INFO - Started process (PID=215) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:05:16,152] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 12:05:16,153] {logging_mixin.py:95} INFO - [2019-02-17 12:05:16,152] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:05:16,446] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:05:16,474] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 12:05:16,487] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 12:05:16,495] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.350 seconds
+[2019-02-17 12:05:56,249] {jobs.py:391} INFO - Started process (PID=241) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:05:56,258] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 12:05:56,259] {logging_mixin.py:95} INFO - [2019-02-17 12:05:56,259] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:05:56,952] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:05:56,990] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 12:05:57,004] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 12:05:57,014] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.766 seconds
+[2019-02-17 12:06:36,355] {jobs.py:391} INFO - Started process (PID=267) to work on /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:06:36,363] {jobs.py:1675} INFO - Processing file /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py for tasks to queue
+[2019-02-17 12:06:36,364] {logging_mixin.py:95} INFO - [2019-02-17 12:06:36,363] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:06:36,643] {jobs.py:1687} INFO - DAG(s) dict_keys(['clean']) retrieved from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-17 12:06:36,670] {jobs.py:1422} INFO - Processing clean
+[2019-02-17 12:06:36,683] {jobs.py:626} INFO - Skipping SLA check for <DAG: clean> because no tasks in DAG have SLAs
+[2019-02-17 12:06:36,691] {jobs.py:399} INFO - Processing /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py took 0.335 seconds

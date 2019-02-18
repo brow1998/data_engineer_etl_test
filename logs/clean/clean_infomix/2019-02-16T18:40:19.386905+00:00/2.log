@@ -1,0 +1,74 @@
+[2019-02-16 16:41:26,189] {models.py:1359} INFO - Dependencies all met for <TaskInstance: clean.clean_infomix 2019-02-16T18:40:19.386905+00:00 [queued]>
+[2019-02-16 16:41:26,191] {models.py:1359} INFO - Dependencies all met for <TaskInstance: clean.clean_infomix 2019-02-16T18:40:19.386905+00:00 [queued]>
+[2019-02-16 16:41:26,191] {models.py:1571} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 2 of 2
+--------------------------------------------------------------------------------
+
+[2019-02-16 16:41:26,200] {models.py:1593} INFO - Executing <Task(PythonOperator): clean_infomix> on 2019-02-16T18:40:19.386905+00:00
+[2019-02-16 16:41:26,201] {base_task_runner.py:118} INFO - Running: ['bash', '-c', 'airflow run clean clean_infomix 2019-02-16T18:40:19.386905+00:00 --job_id 3 --raw -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py --cfg_path /var/folders/3v/wfr8518x3q9_5f53sf2d97y00000gn/T/tmpiyhtpp2e']
+[2019-02-16 16:41:27,195] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix [2019-02-16 16:41:27,194] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-02-16 16:41:27,486] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix [2019-02-16 16:41:27,485] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 16:41:27,865] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix [2019-02-16 16:41:27,865] {cli.py:520} INFO - Running <TaskInstance: clean.clean_infomix 2019-02-16T18:40:19.386905+00:00 [running]> on host bruno-macbook
+[2019-02-16 16:41:27,883] {python_operator.py:95} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=clean
+AIRFLOW_CTX_TASK_ID=clean_infomix
+AIRFLOW_CTX_EXECUTION_DATE=2019-02-16T18:40:19.386905+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2019-02-16T18:40:19.386905+00:00
+[2019-02-16 16:41:27,884] {models.py:1788} ERROR - [Errno 2] File b'../infomix.tsv' does not exist: b'../infomix.tsv'
+Traceback (most recent call last):
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/models.py", line 1657, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 103, in execute
+    return_value = self.execute_callable()
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 108, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py", line 19, in clean_infomix_data
+    infomix = pd.read_csv('../infomix.tsv', sep='\t')
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 702, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 429, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1122, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1853, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 387, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 705, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'../infomix.tsv' does not exist: b'../infomix.tsv'
+[2019-02-16 16:41:27,899] {models.py:1817} INFO - All retries failed; marking task as FAILED
+[2019-02-16 16:41:27,918] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix Traceback (most recent call last):
+[2019-02-16 16:41:27,919] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/bin/airflow", line 32, in <module>
+[2019-02-16 16:41:27,919] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     args.func(args)
+[2019-02-16 16:41:27,919] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2019-02-16 16:41:27,919] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     return f(*args, **kwargs)
+[2019-02-16 16:41:27,919] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/bin/cli.py", line 526, in run
+[2019-02-16 16:41:27,919] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     _run(args, dag, ti)
+[2019-02-16 16:41:27,919] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/bin/cli.py", line 445, in _run
+[2019-02-16 16:41:27,919] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     pool=args.pool,
+[2019-02-16 16:41:27,919] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/utils/db.py", line 73, in wrapper
+[2019-02-16 16:41:27,919] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     return func(*args, **kwargs)
+[2019-02-16 16:41:27,919] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/models.py", line 1657, in _run_raw_task
+[2019-02-16 16:41:27,919] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     result = task_copy.execute(context=context)
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 103, in execute
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     return_value = self.execute_callable()
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 108, in execute_callable
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     return self.python_callable(*self.op_args, **self.op_kwargs)
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py", line 19, in clean_infomix_data
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     infomix = pd.read_csv('../infomix.tsv', sep='\t')
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 702, in parser_f
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     return _read(filepath_or_buffer, kwds)
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 429, in _read
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     parser = TextFileReader(filepath_or_buffer, **kwds)
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 895, in __init__
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     self._make_engine(self.engine)
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1122, in _make_engine
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     self._engine = CParserWrapper(self.f, **self.options)
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "/Users/brow1998/.local/share/virtualenvs/data_engineer_etl_test-nkQxqhT3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1853, in __init__
+[2019-02-16 16:41:27,920] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix     self._reader = parsers.TextReader(src, **kwds)
+[2019-02-16 16:41:27,921] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "pandas/_libs/parsers.pyx", line 387, in pandas._libs.parsers.TextReader.__cinit__
+[2019-02-16 16:41:27,921] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix   File "pandas/_libs/parsers.pyx", line 705, in pandas._libs.parsers.TextReader._setup_parser_source
+[2019-02-16 16:41:27,921] {base_task_runner.py:101} INFO - Job 3: Subtask clean_infomix FileNotFoundError: [Errno 2] File b'../infomix.tsv' does not exist: b'../infomix.tsv'
+[2019-02-16 16:41:31,188] {logging_mixin.py:95} INFO - [2019-02-16 16:41:31,187] {jobs.py:2527} INFO - Task exited with return code 1

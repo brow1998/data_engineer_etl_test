@@ -1,0 +1,19 @@
+[2019-02-16 23:40:03,957] {models.py:1359} INFO - Dependencies all met for <TaskInstance: clean.clean_cnpjs 2019-02-16T00:00:00+00:00 [queued]>
+[2019-02-16 23:40:03,981] {models.py:1359} INFO - Dependencies all met for <TaskInstance: clean.clean_cnpjs 2019-02-16T00:00:00+00:00 [queued]>
+[2019-02-16 23:40:04,011] {models.py:1571} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2019-02-16 23:40:04,028] {models.py:1593} INFO - Executing <Task(PythonOperator): clean_cnpjs> on 2019-02-16T00:00:00+00:00
+[2019-02-16 23:40:04,029] {base_task_runner.py:118} INFO - Running: ['bash', '-c', 'airflow run clean clean_cnpjs 2019-02-16T00:00:00+00:00 --job_id 4 --raw -sd /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py --cfg_path /var/folders/3v/wfr8518x3q9_5f53sf2d97y00000gn/T/tmp6_u9m4gf']
+[2019-02-16 23:40:05,575] {base_task_runner.py:101} INFO - Job 4: Subtask clean_cnpjs [2019-02-16 23:40:05,573] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-02-16 23:40:06,102] {base_task_runner.py:101} INFO - Job 4: Subtask clean_cnpjs [2019-02-16 23:40:06,101] {models.py:273} INFO - Filling up the DagBag from /Users/brow1998/Downloads/data_engineer_etl_test/dags/first_dag.py
+[2019-02-16 23:40:06,579] {base_task_runner.py:101} INFO - Job 4: Subtask clean_cnpjs [2019-02-16 23:40:06,578] {cli.py:520} INFO - Running <TaskInstance: clean.clean_cnpjs 2019-02-16T00:00:00+00:00 [running]> on host bruno-macbook
+[2019-02-16 23:40:06,602] {python_operator.py:95} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=clean
+AIRFLOW_CTX_TASK_ID=clean_cnpjs
+AIRFLOW_CTX_EXECUTION_DATE=2019-02-16T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-02-16T00:00:00+00:00
+[2019-02-16 23:40:06,958] {python_operator.py:104} INFO - Done. Returned value was: None
+[2019-02-16 23:40:08,805] {logging_mixin.py:95} INFO - [2019-02-16 23:40:08,804] {jobs.py:2527} INFO - Task exited with return code 0

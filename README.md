@@ -80,4 +80,4 @@ uv run pytest
 
 ## License
 
-[MIT](LICENSE). The raw lookups in `raw_data/` are public registry and product data.
+[MIT](LICENSE) covers the code in this repository. The data in `raw_data/` belongs to its authors.

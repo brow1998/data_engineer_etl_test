@@ -1,0 +1,24 @@
+[project]
+name = "catalog"
+version = "1.0.0"
+description = "Product master data: store catalogs enriched with GS1, Receita Federal and Cosmos lookups"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = ["duckdb>=1.1,<2"]
+
+[project.scripts]
+catalog = "catalog.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 120
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

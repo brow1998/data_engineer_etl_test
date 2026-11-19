@@ -1,0 +1,2 @@
+# .jl files are JSON Lines data, not Julia
+*.jl linguist-detectable=false
